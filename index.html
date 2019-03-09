@@ -16,8 +16,21 @@
 <!-- Menu Goes Here -->
 
 <center>
-    <b>Home</b> | <a href="http://www.localhost:63342/hello_laravel_heroku/about.html">About</a>
+    <b>Home</b> | <a href="http://www.localhost:63342/laravelHW/hello_laravel_heroku/about.html">About</a>
 </center>
+
+<p>Click the button to display the URL of the document.</p>
+
+<button onclick="getURL()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+    function getURL() {
+        var u = document.URL;
+        document.getElementById("demo").innerHTML = u;
+    }
+</script>
 
 </body>
 </html>
